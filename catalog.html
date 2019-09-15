@@ -19,80 +19,84 @@
       </nav>
     </header>
     <main>
-   <ul>
-     <li>
-       <h2>ИНФРАСТРУКТУРА</h2>
        <button type="button">БАССЕЙН</button>
-       <button type="button">ПАРКОВКА</button>
-       <button type="button">WI-FI</button>
-     </li>
-     <li>
-        <h2>ТИП ЖИЛЬЯ</h2>
-        <button type="button">ГОСТИНИЦА</button>
-        <button type="button">МОТЕЛЬ</button>
-        <button type="button">АПАРТАМЕНТЫ</button>
-      </li>
-      <li>
-          <h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
-          <p>ОТ 0</p>
-          <p>ДО 3000</p>
-          <!--Здесь будет бегунок-->
+<section>
+     <form action="catalog.html" method="GET">
+       <b>ИНФРАСТРУКТУРА</b><br>
+       <input type="checkbox" name="pool" id="pool">
+       <label for="pool">БАССЕЙН</label><br>
+       <input type="checkbox" name="parking" id="parking">
+       <label for="parking">ПАРКОВКА</label><br>
+       <input type="checkbox" name="internet" id="internet">
+       <label for="internet">WI-FI</label>
+        <b>ТИП ЖИЛЬЯ</b><br>
+        <input type="checkbox" name="hotel" id="hotel">
+        <label for="hotel">ГОСТИНИЦА</label><br>
+        <input type="checkbox" name="motel" id="motel">
+        <label for="motel">МОТЕЛЬ</label><br>
+        <input type="checkbox" name="apartments" id="apartments">
+        <label for="apartments">АПАРТАМЕНТЫ</label>
+          <b>СТОИМОСТЬ В СУТКИ (Р):</b>
+          <label for="range">ОТ 0 ДО 3000</label><br>
+          <input type="range" name="range" id="range"><br>
           <button type="button">ПОКАЗАТЬ</button>
-        </li>
-        <li>
-          <h2>НАЙДЕНО: </h2>
-          <p>СОРТИРОВКА:</p>
-          <button type="button">ПО ЦЕНЕ</button>
-          <button type="button">ПО ТИПУ</button>
-          <button type="button">ПО РЕЙТИНГУ</button>
+     </form>
+    </section>
+    <section>
+        <form>
+          <b>НАЙДЕНО:</b>
+          <label for="sort">СОРТИРОВКА:</label>
+          <input type="radio" aria-valuetext="ПО ЦЕНЕ" id="sort" checked>
+          <input type="radio" aria-valuetext="ПО ТИПУ" id="sort">
+          <input type="radio" aria-valuetext="ПО РЕЙТИНГУ" id="sort">
           <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки">
           <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки">
-        </li>
-   </ul>
+        </form>
+      </section>
 <section>
   <h2>ОТЕЛИ</h2>
   <ol>
     <li>
-      <p>AMARA RESORT&SPA</p>
+      <a href="#">AMARA RESORT&SPA</a>
       <P>ГОСТИНИЦА</P>
       <p>ОТ 4000 Р.</p>
-      <button type="button">ПОДРОБНЕЕ</button>
-      <button type="button">ЗАБРОНИРОВАТЬ</button>
+      <a href="#">ПОДРОБНЕЕ</a>
+      <a href="#">ЗАБРОНИРОВАТЬ</a>
       <p>РЕЙТИНГ: 8,5</p>
       <a>
       <img src="img/hotel-picture.png" width="135px" height="90px" alt="Фото гостиницы">
-      <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-      <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-      <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-      <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-      <img src="img/star.png" width="18px" height="17px" alt="Звезда">
+      <img src="img/star.png" width="18px" height="17px" alt="5 из 5 звёзд">
+      <img src="img/star.png" width="18px" height="17px" alt="">
+      <img src="img/star.png" width="18px" height="17px" alt="">
+      <img src="img/star.png" width="18px" height="17px" alt="">
+      <img src="img/star.png" width="18px" height="17px" alt="">
     </a>
     </li>
     <li>
-        <p>DESERT QUALIL INN</p>
+      <a href="#">DESERT QUALIL INN</a>
         <P>МОТЕЛЬ</P>
         <p>ОТ 3000 Р.</p>
-        <button type="button">ПОДРОБНЕЕ</button>
-        <button type="button">ЗАБРОНИРОВАТЬ</button>
+        <a href="#">ПОДРОБНЕЕ</a>
+        <a href="#">ЗАБРОНИРОВАТЬ</a>
         <p>РЕЙТИНГ: 8,9</p>
         <a>
         <img src="img/hotel-picture_3.png" width="135px" height="90px" alt="Фото мотеля">
-        <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-        <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-        <img src="img/star.png" width="18px" height="17px" alt="Звезда">
+        <img src="img/star.png" width="18px" height="17px" alt="3 из 5 звёзд">
+        <img src="img/star.png" width="18px" height="17px" alt="">
+        <img src="img/star.png" width="18px" height="17px" alt="">
       </a>
     </li>
     <li>
-        <p>VILLAS AT POCO DIABLO</p>
+      <a href="#">VILLAS AT POCO DIABLO</a>
         <P>АПАРТАМЕНТЫ</P>
         <p>ОТ 2000 Р.</p>
-        <button type="button">ПОДРОБНЕЕ</button>
-        <button type="button">ЗАБРОНИРОВАТЬ</button>
+        <a href="#">ПОДРОБНЕЕ</a>
+        <a href="#">ЗАБРОНИРОВАТЬ</a>
         <p>РЕЙТИНГ: 9,2</p>
         <a>
         <img src="img/hotel-picture_2.png" width="135px" height="90px" alt="Фото апартаментов">
-        <img src="img/star.png" width="18px" height="17px" alt="Звезда">
-        <img src="img/star.png" width="18px" height="17px" alt="Звезда">
+        <img src="img/star.png" width="18px" height="17px" alt="2 из 5 звёзд">
+        <img src="img/star.png" width="18px" height="17px" alt="">
       </a>
     </li>
   </ol>

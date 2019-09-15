@@ -80,19 +80,18 @@
         <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
       </div>
-      <nav>
-        <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-        <p>ДАТА ЗАЕЗДА:
-        <input> 24 АПРЕЛЯ 2017 <button type="button"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">календарь</button>
-      </p>
-        <p>ДАТА ВЫЕЗДА:
-        <input> 4 ИЮЛЯ 2017 <button type="button"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">календарь</button>
-      </p>
-      <p>ВЗРОСЛЫЕ:</p>
-      <p>ДЕТИ:</p>
- <!-- Здесь будут кнопки фильтра больше и меньше -->
-<button type="button">НАЙТИ</button>
-      </nav>
+      <form action="index.html" method="GET">
+        <b>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</b>
+        <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
+        <input type="date" name="calendar" id="date_of_arrival">24 АПРЕЛЯ 2017<img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка"><br>
+        <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
+        <input type="date" name="calendar" id="date_of_return">4 ИЮЛЯ 2017<img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка"><br>
+        <label for="adults">ВЗРОСЛЫЕ:</label>
+        <input type="number" name="number" id="adults">
+        <label for="kids">ДЕТИ:</label>
+        <input type="number" name="number" id="kids">
+        <input type="submit" value="НАЙТИ">
+    </form>
     </main>
 <footer>
 <p>#VISITSEDONA</p>
