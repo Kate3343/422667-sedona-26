@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PTSans;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    width: 79px;
+    height: 12px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    background-color: yellowgreen;
+}
+
+.logo {
+    width: 140px;
+    height: 71px;
+    object-fit: contain;
+}
+
+.heading {
+    visibility: hidden;
+}
+
+.about-sedona {
+    width: 440px;
+    height: 48px;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+}
+
+.about-sedona1 {
+    width: 489px;
+    height: 13px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+.about-sedona2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.about-sedona3 {
+    width: 434px;
+    height: 96px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+
+footer {
+    background-color: #f2f2f2;
+}
+
+.footer-contacts {
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    background-color: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: darkblue;
+}
+.website-link {
+    text-align: right;
+}
+
+.modal {
+    color: #000000;
+}
+
+.brown-button {
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    font: inherit;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    color: #ffffff;
+    
+}
+
+.form-back {
+    width: 568px;
+    height: 395px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    box-align: center;
+}
+
+.search-form input[type="text"] {
+    width: 91px;
+    height: 12px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.search-form input[type="date"] {
+    width: 346px;
+    height: 38px;
+    background-color: #f2f2f2;
+}
+
+.blue-button {
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    font-family: PTSans;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hotel {
+    box-align: left;
+}
+
+.hotel a {
+    text-decoration: none;
+    box-align: left;
+}
+
+.hotel p {
+    text-align: left;
+}
+
+.hotel-name {
+    width: 210px;
+    height: 16px;
+    font-family: PTSans;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.blue-button1 {
+    background-color: #81b3d2;
+    background-size: 110px 27px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.brown-button1 {
+    background-color: #766357;
+    background-size: 142px 27px;
+    font-family: PTSans;
+    font-size: 14px;    
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.rating {
+    width: 81px;
+    height: 16px;
+    font-family: PTSans;
+    font-size: 14px;
+    color: #666666;
+    background-color: #f2f2f2;
+    background-size: 110px 27px;
+    text-align: right;
+}
