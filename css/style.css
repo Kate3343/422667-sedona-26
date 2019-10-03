@@ -12,6 +12,18 @@ body {
     text-transform: uppercase;
     color: #333333;
     background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 a {
@@ -73,6 +85,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
 .definition-p {
@@ -95,12 +109,26 @@ h2 {
     font-size: 14px;
 }
 
-.advantages .advantages-reasons {
-    width: 400px;
+.advantages .advantages-row {
+    width: 1200px;
     height: 256px;
     background-color: #81b3d2;
     color: #ffffff;
+    display: flex;
+    margin-left: 40px;
 }
+
+.advantages-row .picture {
+    
+}
+
+.advantages-row .advantages-card {
+    text-align: center;
+    width: 400px;
+    height: 256px;
+    margin: 46px 60px 64px 60px;
+}
+
 
 .premodal-paragraph {
     width: 434px;
