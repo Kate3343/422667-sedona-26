@@ -24,23 +24,43 @@ h2 {
 
 .nav-list {
     list-style: none;
-    width: 79px;
-    height: 12px;
-    font-weight: bold;
-    line-height: 1.86;
-    color: #000000;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.navigation a:hover,
-.navigation a:focus {
+.nav-list a{
+    width: 239px;
+    line-height: 1.86;
+    font-weight: bold;
+    color: #000000;
+    min-height: 56px;
+}
+
+.nav-list li {
+    width: 239px;
+    height: 56px;
+    margin-top: 22px;
+}
+
+.nav-list .logo {
+    width: 140px;
+    height: 71px;
+    margin: 0;
+}
+
+.nav-list > li:nth-child(1) {order: 0};
+.nav-list > li:nth-child(2) {order: 1};
+.nav-list > li:nth-child(3) {order: 3};
+.nav-list > li:nth-child(4) {order: 4};
+.nav-list > li:nth-child(5) {order: 2};
+
+.nav-list a:hover,
+.nav-list a:focus {
     color: #81b3d2;
 }
 
-.logo {
-    width: 140px;
-    height: 71px;
-    object-fit: contain;
-}
 
 .heading {
     visibility: hidden;
@@ -49,6 +69,10 @@ h2 {
 .definition {
     width: 1200px;
     height: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
 }
 
 .definition-p {
@@ -60,11 +84,6 @@ h2 {
     color: #000000;
 }
 
-.definition-p1 {
-    width: 489px;
-    height: 13px;
-    line-height: 1.86;
-}
 
 .advantages h2 {
     font-size: 21px;
