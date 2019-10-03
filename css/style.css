@@ -111,7 +111,6 @@ h2 {
 
 .advantages-row {
     width: 1200px;
-    height: 256px;
     display: flex;
     margin-left: 40px;
     margin-right: 40px;
@@ -121,13 +120,25 @@ h2 {
     width: calc(100%/3);
 }
 
-.advantages-card .picture {
+.advantages-row .picture {
     background: #81b3d2;
-    width: calc(100%/3*2);
+    width: 400px;
+    height: 256px;
+    color: #ffffff;
+    padding: 46px 60px 64px 60px;
 }
 
-.advantages-card .grey {
+.advantages-row .picture h2 {
+    color: #ffffff;
+}
+
+.advantages-row .with-icon {
+    padding: 50px 60px;
+}
+
+.advantages-row .grey {
     background: #eeeeee;
+    padding: 50px 77px 64px 77px;
 }
 
 .premodal-paragraph {
