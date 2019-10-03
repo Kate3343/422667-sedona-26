@@ -22,27 +22,35 @@
       </nav>
     </header>
     <main>
-      <section class="filter">
+      <section class="container">
+        <div class="filter-form">
         <form action="catalog.html" method="GET">
-          <b>ИНФРАСТРУКТУРА</b><br>
-          <input type="checkbox" name="pool" id="pool" checked class="checkbox checkbox-on">
-          <label for="pool">БАССЕЙН</label><br>
-          <input type="checkbox" name="parking" id="parking" class="checkbox checkbox-off">
-          <label for="parking">ПАРКОВКА</label><br>
-          <input type="checkbox" name="internet" id="internet" class="checkbox checkbox-off">
-          <label for="internet">WI-FI</label>
-          <b>ТИП ЖИЛЬЯ</b><br>
-          <input type="checkbox" name="hotel" id="hotel" checked class="checkbox checkbox-on">
-          <label for="hotel">ГОСТИНИЦА</label><br>
-          <input type="checkbox" name="motel" id="motel" checked class="checkbox checkbox-on">
-          <label for="motel">МОТЕЛЬ</label><br>
-          <input type="checkbox" name="apartments" id="apartments" checked class="checkbox checkbox-on">
-          <label for="apartments">АПАРТАМЕНТЫ</label>
-          <b>СТОИМОСТЬ В СУТКИ (Р):</b>
-          <label for="range" class="range-price">ОТ 0 ДО 3000</label><br>
-          <input type="range" name="range" id="range" class="range-line"><br>
-          <input type="submit" value="ПОКАЗАТЬ" class="submit-buttom">
+          <div class="columns services">
+            <b>ИНФРАСТРУКТУРА</b><br>
+            <input type="checkbox" name="pool" id="pool" checked class="checkbox checkbox-on">
+            <label for="pool">БАССЕЙН</label><br>
+            <input type="checkbox" name="parking" id="parking" class="checkbox checkbox-off">
+            <label for="parking">ПАРКОВКА</label><br>
+            <input type="checkbox" name="internet" id="internet" class="checkbox checkbox-off">
+            <label for="internet">WI-FI</label>
+          </div>
+          <div class="columns accomodation">
+            <b>ТИП ЖИЛЬЯ</b><br>
+            <input type="checkbox" name="hotel" id="hotel" checked class="checkbox checkbox-on">
+            <label for="hotel">ГОСТИНИЦА</label><br>
+            <input type="checkbox" name="motel" id="motel" checked class="checkbox checkbox-on">
+            <label for="motel">МОТЕЛЬ</label><br>
+            <input type="checkbox" name="apartments" id="apartments" checked class="checkbox checkbox-on">
+            <label for="apartments">АПАРТАМЕНТЫ</label>
+          </div>
+          <div class="columns price">
+            <b>СТОИМОСТЬ В СУТКИ (Р):</b>
+            <label for="range" class="range-price">ОТ 0 ДО 3000</label><br>
+            <input type="range" name="range" id="range" class="range-line"><br>
+            <input type="submit" value="ПОКАЗАТЬ" class="submit-buttom">
+          </div>
         </form>
+        </div> 
       </section>
       <section>
         <form>

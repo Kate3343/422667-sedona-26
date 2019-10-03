@@ -16,7 +16,7 @@
           <li><a href="">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
           <li><a href="index.html" class="logo">
-            <img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона"></a>
+              <img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона"></a>
           </li>
         </ul>
       </nav>
@@ -30,12 +30,12 @@
       </div>
     <div class="advantages">
       <div class="advantages-row"> 
-        <div class="advantages-card picture">
+        <div class="advantages-card bg-blue">
           <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
           <p>- №1 -</p>
           <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <div class="advantages-card">
+        <div class="advantages-card with-picture">
           <img src="img/feature-picture-1.jpg" width="800px" height="256px" alt="Фото Седоны">
         </div>
         </div>
@@ -57,10 +57,10 @@
         </div>
       </div>
       <div class="advantages-row">
-        <div class="advantages-card">
+        <div class="advantages-card with-picture">
           <img src="img/feature-picture-2.jpg" width="800px" height="256px" alt="Фото моста дьявола">
         </div>
-        <div class="advantages-card picture">
+        <div class="advantages-card bg-blue bg-blue1">
           <h2>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
           <p>- №2 -</p>
           <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br> ВЫ ОСМЕЛИТЕСЬ</p>
@@ -86,38 +86,50 @@
     </div>
       <div class="premodal-paragraph"> 
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
       </div>
-      <form action="index.html" method="GET" class="modal">
-        <input type="submit" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" class="brown-button">
-        <div class="form-back search-form">
-        <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
-        <input type="date" name="calendar" id="date_of_arrival">24 АПРЕЛЯ 2017<img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка"><br>
-        <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
-        <input type="date" name="calendar" id="date_of_return">4 ИЮЛЯ 2017<img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка"><br>
-        <label for="adults">ВЗРОСЛЫЕ:</label>
-        <input type="number" name="number" id="adults">
-        <label for="kids">ДЕТИ:</label>
-        <input type="number" name="number" id="kids">
-        <input type="submit" value="НАЙТИ" class="blue-button">
-        </div>
-      </form>
+      <div class="form-back">
+        <form action="index.html" method="GET" class="modal">
+          <input type="submit" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" class="brown-button">
+          <div class="search-form">
+            <div class="filter">
+              <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
+              <input type="text" name="calendar" value="24 апреля 2017" id="date_of_arrival"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
+            </div>
+            <div class="filter">
+              <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
+              <input type="text" name="calendar" value="4 июля 2017" id="date_of_return"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
+            </div>
+            <div class="filter">
+              <label for="adults">ВЗРОСЛЫЕ:</label>
+              <input type="number" name="number" id="adults">
+              <label for="kids">ДЕТИ:</label>
+              <input type="button" name="number" id="kids">
+            </div>
+            <div class="filter">
+              <input type="submit" value="НАЙТИ" class="blue-button">
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
-<footer class="footer-contacts">
-  <p>#VISITSEDONA</p>
+<footer>
 <div class="footer-social">
-<ul>
-  <li class="social"><a class="tw" href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="Твиттер лого"></a></li>
-  <li class="social"><a class="fb" href="#"><img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук лого"></a></li>
-  <li class="social"><a class="youtube" href="#"><img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб лого"></a></li>
-</ul>
+  <p>#VISITSEDONA</p>
 </div>
-    <div class="website-link">
+<div class="footer-social">
+  <ul>
+    <li class="social-buttons tw"><a href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="Твиттер лого"></a></li>
+    <li class="social-buttons fb"><a href="#"><img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук лого"></a></li>
+    <li class="social-buttons youtube"><a href="#"><img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб лого"></a></li>
+  </ul>
+</div>
+  <div class="footer-social website-link">
     <p>WEBSITE BY</p>
     <a href="https://htmlacademy.ru/intensive/htmlcss">
     <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип">
     </a>
-    </div>
+  </div>
 </footer>
   </body>
 </html>

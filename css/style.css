@@ -59,7 +59,9 @@ h2 {
 .nav-list .logo {
     width: 140px;
     height: 71px;
-    margin: 0;
+    margin-top: 0;
+    position: absolute;
+
 }
 
 .nav-list > li:nth-child(1) {order: 0};
@@ -98,7 +100,6 @@ h2 {
     color: #000000;
 }
 
-
 .advantages h2 {
     font-size: 21px;
     font-weight: bold;
@@ -120,7 +121,11 @@ h2 {
     width: calc(100%/3);
 }
 
-.advantages-row .picture {
+.advantages-card.with-picture {
+    width: calc(100%/3*2);
+}
+
+.advantages-row .bg-blue {
     background: #81b3d2;
     width: 400px;
     height: 256px;
@@ -128,8 +133,12 @@ h2 {
     padding: 46px 60px 64px 60px;
 }
 
-.advantages-row .picture h2 {
+.advantages-row .bg-blue h2 {
     color: #ffffff;
+}
+
+.advantages-card.bg-blue1 {
+    padding: 49px 49px 65px 48px;
 }
 
 .advantages-row .with-icon {
@@ -142,8 +151,9 @@ h2 {
 }
 
 .premodal-paragraph {
-    width: 434px;
-    height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .premodal-paragraph h2 {
@@ -158,13 +168,19 @@ h2 {
 
 footer {
     width: 1200px;
-    height: 120px;
     opacity: 0.9;
     background-color: #f2f2f2;
 }
 
-.footer-contacts a:hover,
-.footer-contacts a:focus {
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
     background-color: none;
 }
 
@@ -172,17 +188,25 @@ footer {
     list-style: none;
 }
 
-.social {
+.footer-social .social-buttons {
     display: inline-block;
     width: 46px;
     height: 48px;
     vertical-align: middle;
     margin-right: 6px;
     align-items: center;
-    background: #81b3d2 url("tw-icon.png") no-repeat;
+    background: #81b3d2;
 }
-.social .tw {
-    background-position:0 0;
+.social-buttons.tw {
+    padding-top: 17px;
+}
+
+.social-buttons.fb {
+    padding-top: 13px;
+}
+
+.social-buttons.youtube {
+    padding-top: 17px;
 }
 
 .website-link p {
@@ -196,6 +220,14 @@ footer {
     color: #000000;
 }
 
+.form-back {
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    display: flex;
+    align-items: center;
+    width: 568px;
+    margin-left: 316px;
+}
+
 .brown-button {
     width: 568px;
     height: 86px;
@@ -205,33 +237,41 @@ footer {
     font-weight: bold;
     line-height: 1.24;
     color: #ffffff;
-    
 }
 
-.form-back {
+.form-back .search-form {
     width: 568px;
     height: 395px;
-    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    box-align: center;
+    background: #ffffff;
 }
 
 .search-form input[type="text"] {
-    width: 91px;
-    height: 12px;
+    width: 346px;
+    height: 38px;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.86;
     text-align: left;
+    text-transform: uppercase;
     color: #000000;
-}
-
-.search-form input[type="date"] {
-    width: 346px;
-    height: 38px;
     background-color: #f2f2f2;
 }
 
-.blue-button {
+.search-form label[for="date_of_arrival"] {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+    padding-right: 2px;
+    padding-top: 3px;
+}
+
+.search-form label[for="date_of_return"] {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+}
+
+.search-form .blue-button {
     width: 458px;
     height: 58px;
     background-color: #81b3d2;
@@ -240,13 +280,26 @@ footer {
     color: #ffffff;
 }
 
-.filter {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #ffffff;
+.search-form .filter {
+    display: flex;
+    margin: 55px;
 }
 
-.filter b {
+.filter-form {
+    color: #000000;
+    display: flex;
+}
+
+.filter-form .columns {
+    display: inline-block;
+    width: calc(100%/4);
+}
+
+.columns.services {
+    padding-left: 72px;
+}
+
+.filter-form b {
     font-size: 16px;
     font-weight: bold;
     line-height: 1.31;
