@@ -35,8 +35,9 @@ h2 {
 }
 
 .main-background {
-    background-image: 0 0 url("../img/background-photo.jpg") no-repeat;
+    background: 40px 20px url('../img/background-photo.jpg') no-repeat;
     background-attachment: fixed;
+    height: 525px;
 }
 
 .navigation {
@@ -60,11 +61,6 @@ h2 {
     width: 239px;
     height: 56px;
     background-color: #f2f2f2
-}
-
-.nav-list .logo {
-    padding-top: 0;
-
 }
 
 .nav-list a:hover,
