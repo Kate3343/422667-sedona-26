@@ -23,8 +23,7 @@
     </header>
     <main>
       <section class="container">
-        <div class="filter-form">
-        <form action="catalog.html" method="GET">
+        <form class="filter-form" action="catalog.html" method="GET">
           <div class="columns services">
             <b>ИНФРАСТРУКТУРА</b><br>
             <input type="checkbox" name="pool" id="pool" checked class="checkbox checkbox-on">
@@ -50,87 +49,109 @@
             <input type="submit" value="ПОКАЗАТЬ" class="submit-buttom">
           </div>
         </form>
-        </div> 
       </section>
       <section>
-        <form>
-          <b>НАЙДЕНО:</b>
-          <label for="sort">СОРТИРОВКА:</label>
-          <input type="radio" aria-valuetext="ПО ЦЕНЕ" id="sort" checked>
-          <input type="radio" aria-valuetext="ПО ТИПУ" id="sort">
-          <input type="radio" aria-valuetext="ПО РЕЙТИНГУ" id="sort">
-          <a>
-            <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки" class="up disabled">
-            <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки" class="down current">
-          </a>
+        <div class="container">
+        <form class="sort">
+          <b>НАЙДЕНО:3</b>
+          <div class="sort-buttons">
+            <label for="sort">СОРТИРОВКА:</label>
+            <input type="button" value="ПО ЦЕНЕ" id="sort" checked>
+            <input type="button" value="ПО ТИПУ" id="sort">
+            <input type="button" value="ПО РЕЙТИНГУ" id="sort">
+          </div>
+          <div class="sort-direction"></div>
+            <a>
+              <img class="up disabled" src="img/icon-up-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки">
+              <img class="down current" src="img/icon-down-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки">
+            </a>
+          </div>
         </form>
+        </div>
       </section>
     <div class="hotel">
-      <a href="#" class="hotel-name">AMARA RESORT&SPA</a>
-      <P>ГОСТИНИЦА</P>
-      <p>ОТ 4000 Р.</p>
-      <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
-      <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
-      <p class="rating">РЕЙТИНГ: 8,5</p>
-      <a>
-        <img src="img/hotel-picture.png" width="135px" height="90px" alt="Фото гостиницы">
-      </a>
-      <a>
-        <img src="img/star.png" width="18px" height="17px" alt="5 из 5 звёзд">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-      </a>
+      <div class="hotel-block image">
+        <a>
+          <img src="img/hotel-picture.png" width="135px" height="90px" alt="Фото гостиницы">
+        </a>
+      </div>
+      <div class="hotel-block with-buttons">
+        <a href="#" class="hotel-name">AMARA RESORT&SPA</a>
+        <P>ГОСТИНИЦА ОТ 4000 Р.</p>
+        <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
+        <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-block">
+        <a>
+          <img src="img/star.png" width="18px" height="17px" alt="5 из 5 звёзд">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <p class="rating">РЕЙТИНГ: 8,5</p>
+        </a>
+      </div>
     </div>
     <div class="hotel">
-      <a href="#" class="hotel-name">DESERT QUALIL INN</a>
-      <P>МОТЕЛЬ</P>
-      <p>ОТ 3000 Р.</p>
-      <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
-      <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
-      <p class="rating">РЕЙТИНГ: 8,9</p>
-      <a>
-        <img src="img/hotel-picture_3.png" width="135px" height="90px" alt="Фото мотеля">
-      </a>
-      <a>
-        <img src="img/star.png" width="18px" height="17px" alt="3 из 5 звёзд">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-      </a>
+      <div class="hotel-block image">
+        <a>
+          <img src="img/hotel-picture_3.png" width="135px" height="90px" alt="Фото мотеля">
+        </a>
+      </div>
+      <div class="hotel-block with-buttons">
+        <a href="#" class="hotel-name">DESERT QUALIL INN</a>
+        <P>МОТЕЛЬ ОТ 3000 Р.</p>
+        <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
+        <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-block">
+        <a>
+          <img src="img/star.png" width="18px" height="17px" alt="3 из 5 звёзд">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <p class="rating">РЕЙТИНГ: 8,9</p>
+        </a>
+      </div>
     </div>
     <div class="hotel">
-      <a href="#" class="hotel-name">VILLAS AT POCO DIABLO</a>
-      <P>АПАРТАМЕНТЫ</P>
-      <p>ОТ 2000 Р.</p>
-      <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
-      <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
-      <p class="rating">РЕЙТИНГ: 9,2</p>
-      <a>
-        <img src="img/hotel-picture_2.png" width="135px" height="90px" alt="Фото апартаментов">
-      </a>
-      <a>
-        <img src="img/star.png" width="18px" height="17px" alt="2 из 5 звёзд">
-        <img src="img/star.png" width="18px" height="17px" alt="">
-      </a>
+      <div class="hotel-block image">
+        <a>
+          <img src="img/hotel-picture_2.png" width="135px" height="90px" alt="Фото апартаментов">
+        </a>
+      </div>
+      <div class="hotel-block with-buttons">
+        <a href="#" class="hotel-name">VILLAS AT POCO DIABLO</a>
+        <P>АПАРТАМЕНТЫ ОТ 2000 Р.</p>
+        <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
+        <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-block">
+        <a>
+          <img src="img/star.png" width="18px" height="17px" alt="2 из 5 звёзд">
+          <img src="img/star.png" width="18px" height="17px" alt="">
+          <p class="rating">РЕЙТИНГ: 9,2</p>
+        </a>
+      </div>
     </div>
     </main>
-    <footer class="footer-contacts">
-      <p>#VISITSEDONA</p>
-    <div class="footer-social">
-    <ul>
-      <li class="social social-tw"><a href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="Твиттер лого"></a></li>
-      <li class="social social-fb"><a href="#"><img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук лого"></a></li>
-      <li class="social social-youtube"><a href="#"><img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб лого"></a></li>
-    </ul>
-    </div>
-       <div class="website-link">
-        <p>WEBSITE BY</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип">
-        </a>
-       </div>
-    </footer>
+    <footer>
+      <div class="footer-column">
+        <p>#VISITSEDONA</p>
+      </div>
+      <div class="footer-column footer-social">
+        <ul>
+          <li class="social-buttons tw"><a href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="Твиттер лого"></a></li>
+          <li class="social-buttons fb"><a href="#"><img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук лого"></a></li>
+          <li class="social-buttons youtube"><a href="#"><img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб лого"></a></li>
+        </ul>
+      </div>
+        <div class="footer-column website-link">
+          <p>WEBSITE BY</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип">
+          </a>
+        </div>
+      </footer>
   </body>
 </html>
     
