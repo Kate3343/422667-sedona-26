@@ -35,9 +35,28 @@ h2 {
 }
 
 .main-background {
-    background: 40px 20px url('../img/background-photo.jpg') no-repeat;
+    background: 40px 0px url('../img/background-photo.jpg') no-repeat;
     background-attachment: fixed;
-    height: 525px;
+    height: 773px;
+    width: 1235px;
+}
+.main-background .welcome-image {
+    position: absolute;
+    top: 132px;
+    left: 410px;
+    z-index: 10;
+}
+
+.main-background .background-image-white {
+    position: absolute;
+    top: 506px;
+    left: 39px;
+    z-index: 10;
+}
+
+.background-catalog {
+    background: 0px 0px url('../img/filter-background.jpg') no-repeat;
+    margin-left: 10px;
 }
 
 .navigation {
@@ -60,7 +79,15 @@ h2 {
 .nav-list li {
     width: 239px;
     height: 56px;
-    background-color: #f2f2f2
+    background-color: #ffffff;
+    margin-top: -20px;
+    padding: 22px 68px 22px 73px;
+}
+
+.nav-list .logo {
+    position: absolute;
+    top: 0px;
+    left: 569px;
 }
 
 .nav-list a:hover,
@@ -78,9 +105,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 40px;
+    top: 564px;
 }
 
 .definition-p {
@@ -90,6 +118,11 @@ h2 {
     font-weight: bold;
     line-height: 1.2;
     color: #000000;
+    margin-top: 61px;
+}
+
+.advantages {
+    margin-top: -51px;
 }
 
 .advantages h2 {
@@ -287,8 +320,9 @@ footer {
 }
 
 form.filter-form {
-    color: #000000;
+    color: #ffffff;
     display: flex;
+    margin-top: -20px;
 }
 
 .filter-form .columns {
@@ -373,8 +407,16 @@ form.sort .sort-buttons {
     padding-left: 30px;
 }
 
-form.sort label[for="button"] {
+.sort-buttons input[type=button] {
+    background-color: #f2f2f2;
     border: none;
+    color: rgba(0, 0, 0, 0.3);
+    font-family: PT Sans;
+    font-size: 14px;
+}
+
+.sort-buttons input[type=button] :checked {
+    color: #81b3d2;
 }
 
 form.sort .sort-direction {
