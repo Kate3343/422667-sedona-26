@@ -391,20 +391,20 @@ form.filter-form {
 
 form.sort {
     display: flex;
-    width: calc(100%/3);
+    padding-left: 112px;
+    padding-top: 31px;
 }
 
-form .sort b {
+form b {
     font-size: 21px;
     font-weight: bold;
-    padding-left: 72px;
+    padding-right: 49px;
 }
 
 form.sort .sort-buttons {
     display: flex;
     justify-content: center;
     font-size: 12px;
-    padding-left: 30px;
 }
 
 .sort-buttons input[type=button] {
@@ -435,41 +435,37 @@ form.sort .sort-direction {
 .hotel {
     box-align: left;
     display: flex;
+    width: 1200px;
 }
 
 .hotel .hotel-block {
     display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 30px;
 }
 
 .hotel-block.with-buttons {
     display: inline-block;
-    padding-right: 500px;
+    vertical-align: top;
+    margin-bottom: 31px;
+    width: 258px;
 }
 
 .hotel-block.image {
-    padding-left: 72px;
+    padding-left: 112px;
     padding-right: 30px;
 }
 
-.hotel a {
-    text-decoration: none;
-    box-align: left;
-}
-
 .hotel p {
-    text-align: left;
-
+    color: #333333;
 }
 
 .hotel-name {
     font-size: 21px;
     font-weight: bold;
-    line-height: 1.24;
-    text-align: left;
     color: #000000;
+    text-align: left;
 }
 
 .blue-button1 {
@@ -490,7 +486,19 @@ form.sort .sort-direction {
     padding: 8px 16px 8px 18px;
 }
 
-.hotel .hotel-block .rating {
+.blue-brown-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 258px;
+}
+
+.hotel-block.rating {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 72px;
+}
+
+.hotel-block.rating p {
     font-size: 14px;
     color: #666666;
     background-color: #f2f2f2;
