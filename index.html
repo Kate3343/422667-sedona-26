@@ -8,29 +8,33 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="main-background">
-        <img class="welcome-image" src="img/welcome.svg" width="459px" height="353px">
-        <img class="background-image-white" src="img/polygon.svg" width="1201px" height="59px">
+    <header class="site-header">
+      <div class="container">
         <nav class="navigation">
           <ul class="nav-list">
             <li><a href="">Информация</a></li>
             <li><a href="">Фото и видео</a></li>
-            <li><a href="index.html">
-                <img class="logo" src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона"></a>
-            </li>
             <li><a href="">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
+
+          <a class="nav-logo" href="index.html">
+            <img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона">
+          </a>
         </nav>
+      </div>
     </header>
-      <main>
-        <h1 class="heading">Sedona</h1>
+    <main class="container">
+      <div class="main-bg">
+        <img class="welcome-image" src="img/welcome.svg" width="459px" height="353px">
+        <img class="background-image-white" src="img/polygon.svg" width="1201px" height="59px">
+      </div>
+
         <div class="definition">
           <p class="definition-p">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
-          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+          <p class="definition-p1">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
         </div>
-      </div>
+
     <div class="advantages">
       <div class="advantages-row"> 
         <div class="advantages-card bg-blue">
@@ -87,36 +91,16 @@
       </div>
       </div>
     </div>
-      <div class="premodal-paragraph"> 
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-      </div>
-      <div class="form-back">
-        <form action="index.html" method="GET" class="modal">
-          <input type="submit" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" class="brown-button">
-          <div class="search-form">
-            <div class="filter">
-              <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
-              <input type="text" name="calendar" value="24 апреля 2017" id="date_of_arrival"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
-            </div>
-            <div class="filter">
-              <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
-              <input type="text" name="calendar" value="4 июля 2017" id="date_of_return"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
-            </div>
-            <div class="filter">
-              <label for="adults">ВЗРОСЛЫЕ:</label>
-              <input type="number" name="number" id="adults">
-              <label for="kids">ДЕТИ:</label>
-              <input type="button" name="number" id="kids">
-            </div>
-            <div class="filter">
-              <input type="submit" value="НАЙТИ" class="blue-button">
-            </div>
-          </div>
-        </form>
-      </div>
+    <div class="search-block"> 
+      <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+      <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+      <button type="button" class="brown-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    </div>
+
+    <div class="map">
+
     </main>
-<footer>
+<footer class="container">
 <div class="footer-column">
   <p>#VISITSEDONA</p>
 </div>
@@ -134,5 +118,30 @@
     </a>
   </div>
 </footer>
+
+<div class="form-back">
+    <form action="index.html" method="GET" class="modal">
+      <div class="search-form">
+        <div class="filter">
+          <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
+          <input type="text" name="calendar" value="24 апреля 2017" id="date_of_arrival"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
+        </div>
+        <div class="filter">
+          <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
+          <input type="text" name="calendar" value="4 июля 2017" id="date_of_return"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
+        </div>
+        <div class="filter">
+          <label for="adults">ВЗРОСЛЫЕ:</label>
+          <input type="number" name="number" id="adults">
+          <label for="kids">ДЕТИ:</label>
+          <input type="button" name="number" id="kids">
+        </div>
+        <div class="filter">
+          <input type="submit" value="НАЙТИ" class="blue-button">
+        </div>
+      </div>
+    </form>
+  </div>
+
   </body>
 </html>

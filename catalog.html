@@ -8,77 +8,125 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <nav class="navigation">
-            <ul class="nav-list">
-              <li><a href="">Информация</a></li>
-              <li><a href="">Фото и видео</a></li>
-              <li><a class="logo" href="index.html"><img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона"></a>
-              </li>
-              <li><a href="">Карта штата</a></li>
-              <li><a href="catalog.html">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-      <section class="container">
+      <header class="site-header">
+          <div class="container">
+            <nav class="navigation">
+              <ul class="nav-list">
+                <li><a href="">Информация</a></li>
+                <li><a href="">Фото и видео</a></li>
+                <li><a href="">Карта штата</a></li>
+                <li><a href="catalog.html">Гостиницы</a></li>
+              </ul>
+    
+              <a class="nav-logo" href="index.html">
+                <img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона">
+              </a>
+            </nav>
+          </div>
+        </header>
+    <main class="container">
+      <section>
       <div class="background-catalog">
         <form class="filter-form" action="catalog.html" method="GET">
-          <div class="columns services">
-            <b>ИНФРАСТРУКТУРА</b><br>
-            <input type="checkbox" name="pool" id="pool" checked class="checkbox checkbox-on">
-            <label for="pool">БАССЕЙН</label><br>
-            <input type="checkbox" name="parking" id="parking" class="checkbox checkbox-off">
-            <label for="parking">ПАРКОВКА</label><br>
-            <input type="checkbox" name="internet" id="internet" class="checkbox checkbox-off">
-            <label for="internet">WI-FI</label>
+          <div class="columns">
+            <div class="columns-with-checkboxes">
+              <b>ИНФРАСТРУКТУРА</b>
+            </div>
+            <div class="columns-with-checkboxes">
+              <label for="checkbox-on">
+                <span class="checkbox-img"></span>
+                <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
+              </label>
+              <label for="pool">БАССЕЙН</label>
+            </div>
+            <div class="columns-with-checkboxes">
+              <label for="checkbox-off">
+                <span class="checkbox-img-off"></span>
+                <input type="checkbox" name="checkbox" id="checkbox-off" class="checkbox checkbox-on">
+              </label>
+              <label for="parking">ПАРКОВКА</label><br>
+            </div>
+            <div class="columns-with-checkboxes">
+              <label for="checkbox-off">
+                <span class="checkbox-img-off"></span>
+                <input type="checkbox" name="checkbox" id="checkbox-off" class="checkbox checkbox-on">
+              </label>
+              <label for="internet">WI-FI</label>
+            </div>
           </div>
-          <div class="columns accomodation">
-            <b>ТИП ЖИЛЬЯ</b><br>
-            <input type="checkbox" name="hotel" id="hotel" checked class="checkbox checkbox-on">
-            <label for="hotel">ГОСТИНИЦА</label><br>
-            <input type="checkbox" name="motel" id="motel" checked class="checkbox checkbox-on">
-            <label for="motel">МОТЕЛЬ</label><br>
-            <input type="checkbox" name="apartments" id="apartments" checked class="checkbox checkbox-on">
-            <label for="apartments">АПАРТАМЕНТЫ</label>
+          <div class="columns">
+
+            <div class="columns-with-checkboxes">
+              <b>ТИП ЖИЛЬЯ</b>
+            </div>
+            <div class="columns-with-checkboxes">
+                <label for="checkbox-on">
+                  <span class="checkbox-img"></span>
+                  <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
+                </label>
+              <label for="hotel">ГОСТИНИЦА</label><br>
+            </div>
+            <div class="columns-with-checkboxes">
+              <label for="checkbox-on">
+                <span class="checkbox-img"></span>
+                <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
+              </label>
+              <label for="motel">МОТЕЛЬ</label>
+            </div>
+            <div class="columns-with-checkboxes">
+              <label for="checkbox-on">
+                <span class="checkbox-img"></span>
+                <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
+              </label>
+              <label for="apartments">АПАРТАМЕНТЫ</label>
+            </div>
           </div>
-          <div class="columns price">
-            <b>СТОИМОСТЬ В СУТКИ (Р):</b>
-            <label for="range" class="range-price">ОТ 0 ДО 3000</label><br>
-            <input type="range" name="range" id="range" class="range-line"><br>
-            <input type="submit" value="ПОКАЗАТЬ" class="submit-buttom">
+
+          <div class="columns">
+            <div class="column-with-price">
+              <b>СТОИМОСТЬ В СУТКИ (Р):</b>
+              <p>ОТ 0 ДО 3000</p>
+              <label for="range">
+                <span class="range-button"></span>
+                <input type="range" name="range" id="range" class="range-line">
+              </label>
+              <input type="submit" value="ПОКАЗАТЬ" class="submit-buttom">
+            </div>
           </div>
         </form>
       </section>
-      <section>
-        <form class="sort">
-          <b>НАЙДЕНО:3</b>
+
+      <section class="sort">
           <div class="sort-buttons">
-            <label for="sort">СОРТИРОВКА:</label>
-            <input type="button" value="ПО ЦЕНЕ" id="sort" checked>
-            <input type="button" value="ПО ТИПУ" id="sort">
-            <input type="button" value="ПО РЕЙТИНГУ" id="sort">
+            <b>НАЙДЕНО:3</b>
+            <p>СОРТИРОВКА:</p>
+            <a class="sort-buttons-active" href="#">ПО ЦЕНЕ</a>
+            <a href="#">ПО ТИПУ</a>
+            <a href="#">ПО РЕЙТИНГУ</a>
           </div>
           <div class="sort-direction"></div>
             <a>
-              <img class="up disabled" src="img/icon-up-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки">
-              <img class="down current" src="img/icon-down-dir.svg" width="11px" height="10px" alt="Ярлык стрелочки">
+              <img class="up disabled" src="img/icon-up-dir.png" width="11px" height="10px" alt="Ярлык стрелочки">
+              <img class="down current" src="img/icon-down-dir.png" width="11px" height="10px" alt="Ярлык стрелочки">
             </a>
           </div>
-        </form>
       </section>
+
     <div class="hotel">
-      <div class="hotel-block image">
+      <div class="hotel-pic">
         <a>
           <img src="img/hotel-picture.png" width="135px" height="90px" alt="Фото гостиницы">
         </a>
       </div>
       <div class="hotel-block with-buttons">
         <a href="#" class="hotel-name">AMARA RESORT&SPA</a>
-        <P>ГОСТИНИЦА ОТ 4000 Р.</p>
-        <div class="blue-brown-buttons">
-          <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
-          <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
+        <div class="hotel-info">
+          <div class="hotel-type">ГОСТИНИЦА</div>
+          <div class="hotel-price">ОТ 4000 Р.</div>
+        </div>
+        <div>
+          <a href="#" class="btn btn-blue">ПОДРОБНЕЕ</a>
+          <a href="#" class="btn btn-brown">ЗАБРОНИРОВАТЬ</a>
         </div>
       </div>
       <div class="hotel-block rating">
@@ -88,22 +136,25 @@
           <img src="img/star.png" width="18px" height="17px" alt="">
           <img src="img/star.png" width="18px" height="17px" alt="">
           <img src="img/star.png" width="18px" height="17px" alt="">
-          <p>РЕЙТИНГ: 8,5</p>
         </a>
+        <p>РЕЙТИНГ: 8,5</p>
       </div>
     </div>
     <div class="hotel">
-      <div class="hotel-block image">
+      <div class="hotel-pic">
         <a>
           <img src="img/hotel-picture_3.png" width="135px" height="90px" alt="Фото мотеля">
         </a>
       </div>
       <div class="hotel-block with-buttons">
         <a href="#" class="hotel-name">DESERT QUALIL INN</a>
-        <P>МОТЕЛЬ ОТ 3000 Р.</p>
-        <div class="blue-brown-buttons">
-          <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
-          <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
+        <div class="hotel-info">
+          <div class="hotel-type">МОТЕЛЬ</div>
+          <div class="hotel-price">ОТ 3000 Р.</div>
+        </div>
+        <div>
+          <a href="#" class="btn btn-blue">ПОДРОБНЕЕ</a>
+          <a href="#" class="btn btn-brown">ЗАБРОНИРОВАТЬ</a>
         </div>
       </div>
       <div class="hotel-block rating">
@@ -111,35 +162,38 @@
           <img src="img/star.png" width="18px" height="17px" alt="3 из 5 звёзд">
           <img src="img/star.png" width="18px" height="17px" alt="">
           <img src="img/star.png" width="18px" height="17px" alt="">
-          <p>РЕЙТИНГ: 8,9</p>
         </a>
+        <p>РЕЙТИНГ: 8,9</p>
       </div>
     </div>
     </div>
     <div class="hotel">
-      <div class="hotel-block image">
+      <div class="hotel-pic">
         <a>
           <img src="img/hotel-picture_2.png" width="135px" height="90px" alt="Фото апартаментов">
         </a>
       </div>
       <div class="hotel-block with-buttons">
         <a href="#" class="hotel-name">VILLAS AT POCO DIABLO</a>
-        <P>АПАРТАМЕНТЫ ОТ 2000 Р.</p>
-        <div class="blue-brown-buttons">
-          <a href="#" class="blue-button1">ПОДРОБНЕЕ</a>
-          <a href="#" class="brown-button1">ЗАБРОНИРОВАТЬ</a>
+        <div class="hotel-info">
+          <div class="hotel-type">АПАРТАМЕНТЫ</div>
+          <div class="hotel-price">ОТ 2000 Р.</div>
+        </div>
+        <div>
+          <a href="#" class="btn btn-blue">ПОДРОБНЕЕ</a>
+          <a href="#" class="btn btn-brown">ЗАБРОНИРОВАТЬ</a>
         </div>
       </div>
       <div class="hotel-block rating">
         <a>
           <img src="img/star.png" width="18px" height="17px" alt="2 из 5 звёзд">
           <img src="img/star.png" width="18px" height="17px" alt="">
-          <p>РЕЙТИНГ: 9,2</p>
         </a>
+        <p>РЕЙТИНГ: 9,2</p>
       </div>
     </div>
     </main>
-    <footer>
+    <footer class="container">
       <div class="footer-column">
         <p>#VISITSEDONA</p>
       </div>
