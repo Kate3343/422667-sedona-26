@@ -106,6 +106,10 @@ h2 {
     color: #81b3d2;
 }
 
+.nav-list a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .definition {
     width: 100%;
     height: 216px;
@@ -197,14 +201,28 @@ h2 {
 }
 
 .brown-button {
-    width: 568px;
-    height: 86px;
+    padding-top: 56px;
+    padding-bottom: 30px;
+}
+
+.brown-button a {
     background-color: #766357;
     font: inherit;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.24;
     color: #ffffff;
+    padding: 30px 139px 30px 140px;
+}
+
+.brown-button a:hover,
+.brown-button a:focus {
+    background-color: #604e43;
+}
+
+.brown-button a:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 footer {
@@ -217,11 +235,6 @@ footer {
 
 .footer-column{
     width: calc(100%/3);
-}
-
-.footer-social a:hover,
-.footer-social a:focus {
-    background-color: none;
 }
 
 .footer-social ul {
@@ -252,6 +265,11 @@ footer {
     padding-top: 17px;
 }
 
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: #669ec0;
+}
+
 .footer-column p {
     padding-top: 51px;
     padding-bottom: 53px;
@@ -268,25 +286,28 @@ footer {
     padding-left: 5px;
 }
 
+.footer-column.website-link a:hover,
+.footer-column.website-link a:focus {
+    color: #81b3d2;
+}
 .modal {
     color: #000000;
 }
 
 .form-back {
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    display: flex;
-    align-items: center;
-    width: 568px;
-    margin-left: 316px;
-}
-
-.form-back .search-form {
     width: 568px;
     height: 395px;
     background: #ffffff;
 }
 
-.search-form input[type="text"] {
+.modal-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-row input[type="text"] {
     width: 346px;
     height: 38px;
     font-size: 14px;
@@ -296,33 +317,97 @@ footer {
     text-transform: uppercase;
     color: #000000;
     background-color: #f2f2f2;
+    border: none;
+    margin-left: 21px;
+    margin-bottom: 29px;
 }
 
-.search-form label[for="date_of_arrival"] {
+#date_of_arrival {
+    width: 346px;
+    height: 38px;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.86;
-    padding-right: 2px;
-    padding-top: 3px;
+    position: relative;
+    margin-right: 55px;
+    margin-top: 55px;
 }
 
-.search-form label[for="date_of_return"] {
+#date_of_return {
+    width: 346px;
+    height: 38px;
     font-size: 14px;
     font-weight: bold;
     line-height: 1.86;
+    position: relative;
+    margin-right: 55px;
 }
 
-.search-form .blue-button {
+.modal-row .field-cal {
+    border: none;
+    background: transparent;
+    position: absolute;
+}
+
+.modal-row .modal-row-adults {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-row .modal-row-kids {
+    display: flex;
+    flex-direction: column;
+}
+
+.minus-plus-buttons{
+    display: inline-block;
+}
+
+.modal-row-adults input[type="text"] {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.modal-row-kids input[type="text"] {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+#minus-button {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+#plus-button {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.blue-button a {
     width: 458px;
     height: 58px;
     background-color: #81b3d2;
     font-size: 21px;
     font-weight: bold;
     color: #ffffff;
+    margin-top: 55px;
+    padding: 15px 196px 20px 196px;
 }
 
-.search-form .filter {
-    display: flex;  
+.blue-button a:hover,
+.blue-button a:focus {
+    background-color: #669ec0;
+}
+
+.blue-button a:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 form.filter-form {
@@ -388,13 +473,18 @@ form.filter-form {
 }
 
 .range-line {
+    border-bottom: 2px solid #f2f2f2;
     width: 317px;
-    height: 2px;
     opacity: 0.3;
-    background-color: #ffffff;
-    padding-bottom: 34px;
     position: relative;
-    
+    padding-bottom: 20px;
+}
+
+.range-line1 {
+    border-bottom: 2px solid #ffffff;
+    width: 248px;
+    position: absolute;
+    padding-bottom: 100px;
 }
 
 .range-button:before {
@@ -413,12 +503,25 @@ form.filter-form {
     top: 181px;
 }
 
-.submit-buttom {
+.submit-button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.submit-button {
     width: 133px;
     height: 32px;
     border: solid 2px #ffffff;
-    color: #ffffff;
     background-color: transparent;
+    margin-top: 34px;
+    padding-top: 5px;
+}
+
+.submit-button a:hover,
+.submit-button a:focus {
+    background-color: #ffffff;
+    padding: 7px 31px 6px 32px;
+    color: #000000;
 }
 
 .sort {
@@ -437,6 +540,17 @@ form.filter-form {
     font-family: PT Sans, sans-serif;
     font-size: 12px;
     padding-right: 33px;
+}
+
+.sort-buttons a:hover,
+.sort-buttons a:focus {
+    color: #81b3d2;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-buttons a:active {
+    color: #000000;
+    border: none;
 }
 
 .sort-buttons {
@@ -470,6 +584,11 @@ form.filter-form {
     width: 36px;
     padding-right: 73px;
 } 
+
+.sort-direction a:hover,
+.sort-direction a:focus {
+    color: #000000;
+}
 
 .disabled {
     opacity: 0.3;
@@ -535,7 +654,19 @@ form.filter-form {
 .hotel-name {
     font-size: 21px;
     font-weight: bold;
+}
+
+.hotel-name a {
     color: #000000;
+}
+
+.hotel-name a:hover,
+.hotel-name a:focus {
+    color: #81b3d2;
+}
+
+.hotel-name a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-info {
@@ -553,16 +684,38 @@ form.filter-form {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    padding: 3px 17px 2px 17px;
     font-weight: bold;
+    margin-top: 5px;
 }
 
-.btn-blue {
+.btn-blue a {
     background-color: #81b3d2;
-    color: #ffffff;
+    color:#ffffff;
+    padding: 3px 17px 2px 17px;
 }
 
-.btn-brown {
-    background-color: #766357;    
+.btn-blue a:hover,
+.btn-blue a:focus {
+    background-color: #669ec0;
+}
+
+.btn-blue a:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-brown a {
+    background-color: #766357;   
     color: #ffffff;
+    padding: 3px 17px 2px 17px;
+}
+
+.btn-brown a:hover,
+.btn-brown a:focus {
+    background-color: #604e43;
+}
+
+.btn-brown a:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }

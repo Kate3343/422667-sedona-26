@@ -30,10 +30,10 @@
         <img class="background-image-white" src="img/polygon.svg" width="1201px" height="59px">
       </div>
 
-        <div class="definition">
-          <p class="definition-p">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
-          <p class="definition-p1">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
-        </div>
+      <div class="definition">
+        <p class="definition-p">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+        <p class="definition-p1">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+      </div>
 
     <div class="advantages">
       <div class="advantages-row"> 
@@ -94,10 +94,14 @@
     <div class="search-block"> 
       <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-      <button type="button" class="brown-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+      <div class="brown-button">
+        <a href="">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </div>
     </div>
 
     <div class="map">
+      <img src="img/map.jpg" width="1200px" height="593px" alt="Карта">
+    </div>
 
     </main>
 <footer class="container">
@@ -113,34 +117,55 @@
 </div>
   <div class="footer-column website-link">
     <p>WEBSITE BY</p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-    <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип">
-    </a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип">
+      </a>
   </div>
 </footer>
 
 <div class="form-back">
-    <form action="index.html" method="GET" class="modal">
-      <div class="search-form">
-        <div class="filter">
-          <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
-          <input type="text" name="calendar" value="24 апреля 2017" id="date_of_arrival"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
-        </div>
-        <div class="filter">
-          <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
-          <input type="text" name="calendar" value="4 июля 2017" id="date_of_return"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка">
-        </div>
-        <div class="filter">
-          <label for="adults">ВЗРОСЛЫЕ:</label>
-          <input type="number" name="number" id="adults">
-          <label for="kids">ДЕТИ:</label>
-          <input type="button" name="number" id="kids">
-        </div>
-        <div class="filter">
-          <input type="submit" value="НАЙТИ" class="blue-button">
+  <form action="index.html" method="GET" class="modal">
+    <div class="modal-row">
+      <label for="date_of_arrival">ДАТА ЗАЕЗДА:</label>
+      <div class="field-wrapper">
+        <input class="text-field" type="text" name="calendar" value="24 апреля 2017" id="date_of_arrival">
+        <button type="button" class="field-cal"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка"></button>
+      </div>
+    </div>
+
+    <div class="modal-row">
+      <label for="date_of_return">ДАТА ВЫЕЗДА:</label>
+      <div class="field-wrapper">
+        <input class="text-field" type="text" name="calendar" value="4 июля 2017" id="date_of_return">
+        <button type="button" class="field-cal"><img src="img/calendar.svg" width="21px" height="22px" alt="Каледарь-кнопка"></button>
+      </div>
+    </div>
+
+    <div class="modal-row">
+      <div class=".modal-row-adults">
+        <label for="adults">ВЗРОСЛЫЕ:</label>
+        <div class="minus-plus-buttons">
+          <input type="button" name="minus" value="-" id="minus-button">
+          <input type="text" name="number" value="2" id="adults">
+          <input type="button" name="plus" value="+" id="plus-button">
         </div>
       </div>
-    </form>
+      <div class=".modal-row-kids">
+        <label for="kids">ДЕТИ:</label>
+        <div class="minus-plus-buttons">
+          <input type="button" name="minus" value="-" id="minus-button">
+          <input type="text" name="number" value="0" id="kids">
+          <input type="button" name="plus" value="+" id="plus-button">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-row">
+      <div class="blue-button">
+        <a href="">НАЙТИ</a>
+      </div>
+    </div>
+  </form>
   </div>
 
   </body>
