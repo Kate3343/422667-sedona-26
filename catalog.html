@@ -26,75 +26,59 @@
         </header>
     <main class="container">
       <section>
-      <div class="background-catalog">
-        <form class="filter-form" action="catalog.html" method="GET">
-          <div class="columns">
-            <div class="columns-with-checkboxes">
-              <b>ИНФРАСТРУКТУРА</b>
+        <div class="background-catalog">
+          <form class="filter-form" action="catalog.html" method="GET">
+            <div class="columns">
+              <ul class="filter-checkboxes">
+                <li class="filter-checkboxes-title"><b>ИНФРАСТРУКТУРА</b></li>
+                <li class="filter-checkbox">
+                  <input type="checkbox" name="infrastructure" id="pool" checked>
+                  <label for="pool">БАССЕЙН</label>
+                </li>
+                <li class="filter-checkbox">
+                  <input type="checkbox" name="infrastructure" id="parking">
+                  <label for="parking">ПАРКОВКА</label>
+                </li>
+                <li class="filter-checkbox">
+                  <input type="checkbox" name="infrastructure" id="wifi" >
+                  <label for="wifi">WI-FI</label>
+                </li>
+              </ul>
             </div>
-            <div class="columns-with-checkboxes">
-              <label for="checkbox-on">
-                <span class="checkbox-img"></span>
-                <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
-              </label>
-              <label for="pool">БАССЕЙН</label>
+            <div class="columns">
+              <ul class="filter-checkboxes">
+                <li class="filter-checkboxes-title"><b>ТИП ЖИЛЬЯ</b></li>
+                <li class="filter-checkbox">
+                  <input type="checkbox" name="accomodation" id="hotel" checked class="checkbox checkbox-on">
+                  <label for="hotel">ГОСТИНИЦА</label>
+                </li>
+                <li class="filter-checkbox">
+                  <input type="checkbox" name="accomodation" id="motel" checked class="checkbox checkbox-on">
+                  <label for="motel">МОТЕЛЬ</label>
+                </li>
+                <li class="filter-checkbox">
+                  <input type="checkbox" name="apartments" id="checkbox-on" checked class="checkbox checkbox-on">
+                  <label for="apartments">АПАРТАМЕНТЫ</label>
+                </li>
+              </ul>
             </div>
-            <div class="columns-with-checkboxes">
-              <label for="checkbox-off">
-                <span class="checkbox-img-off"></span>
-                <input type="checkbox" name="checkbox" id="checkbox-off" class="checkbox checkbox-on">
-              </label>
-              <label for="parking">ПАРКОВКА</label><br>
-            </div>
-            <div class="columns-with-checkboxes">
-              <label for="checkbox-off">
-                <span class="checkbox-img-off"></span>
-                <input type="checkbox" name="checkbox" id="checkbox-off" class="checkbox checkbox-on">
-              </label>
-              <label for="internet">WI-FI</label>
-            </div>
-          </div>
-          <div class="columns">
 
-            <div class="columns-with-checkboxes">
-              <b>ТИП ЖИЛЬЯ</b>
-            </div>
-            <div class="columns-with-checkboxes">
-                <label for="checkbox-on">
-                  <span class="checkbox-img"></span>
-                  <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
-                </label>
-              <label for="hotel">ГОСТИНИЦА</label><br>
-            </div>
-            <div class="columns-with-checkboxes">
-              <label for="checkbox-on">
-                <span class="checkbox-img"></span>
-                <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
-              </label>
-              <label for="motel">МОТЕЛЬ</label>
-            </div>
-            <div class="columns-with-checkboxes">
-              <label for="checkbox-on">
-                <span class="checkbox-img"></span>
-                <input type="checkbox" name="checkbox" id="checkbox-on" checked class="checkbox checkbox-on">
-              </label>
-              <label for="apartments">АПАРТАМЕНТЫ</label>
-            </div>
-          </div>
-
-          <div class="columns">
-            <div class="column-with-price">
-              <b>СТОИМОСТЬ В СУТКИ (Р):</b>
-              <p>ОТ 0 ДО 3000</p>
-                <span class="range-button"></span>
-                <div class="range-line"></div>
-                <div class="range-line1"></div>
-                <div class="submit-button">
-                  <a href="">ПОКАЗАТЬ</a>
+            <div class="columns filter-rangeline">
+                <ul class="filter-checkboxes">
+                  <li class="filter-checkboxes-title">
+                    <b>СТОИМОСТЬ В СУТКИ (Р):</b>
+                  </li>
+                  <li><p>ОТ 0 <span class="divider"></span>ДО 3000</p></li>
+                  <li class="range-button"></li>
+                  <li class="range-line"></li>
+                  <li class="range-line1"></li>
+                </ul>
+                <div >
+                  <button type="submit" class="submit-button">ПОКАЗАТЬ</button>
                 </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
 
       <section class="sort">
@@ -212,24 +196,25 @@
       </div>
     </div>
     </main>
-    <footer class="container">
+
+    <footer class="inner-footer">
       <div class="footer-column">
-        <p>#VISITSEDONA</p>
+        <div class="footer-hashtag">
+          <p>#VISITSEDONA</p>
+        </div>
       </div>
-      <div class="footer-column footer-social">
-        <ul>
-          <li class="social-buttons tw"><a href="#"><img src="img/twitter.svg" width="17px" height="15px" alt="Твиттер лого"></a></li>
-          <li class="social-buttons fb"><a href="#"><img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук лого"></a></li>
-          <li class="social-buttons youtube"><a href="#"><img src="img/youtube.svg" width="20px" height="16px" alt="Ютуб лого"></a></li>
+      <div class="footer-column">
+        <ul class="footer-social">
+          <li class="social-buttons"><a href="#"><div class="tw"></div></a></li>
+          <li class="social-buttons"><a href="#"><div class="fb"></div></a></li>
+          <li class="social-buttons"><a href="#"><div class="youtube"></div></a></li>
         </ul>
       </div>
-        <div class="footer-column website-link">
-          <p>WEBSITE BY</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип">
-          </a>
-        </div>
-      </footer>
+      <div class="footer-column">
+        <p>WEBSITE BY</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="website-link"></a>
+      </div>
+    </footer>
   </body>
 </html>
     
