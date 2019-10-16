@@ -74,6 +74,7 @@ h2 {
 
 .nav-logo {
     width: 140px;
+    height: 71px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -656,7 +657,6 @@ form.filter-form {
     visibility: hidden;
 }
 
-
 .filter-checkboxes p {
     border: solid 2px #ffffff;
     width: 100%;
@@ -700,6 +700,13 @@ form.filter-form {
     position: absolute;
     top: 203px;
     right: 170px;
+}
+
+.filter-checkboxes .range-button:hover,
+.filter-checkboxes .range-button:focus {
+    background-image: url(../img/filter-button-bigger.svg);
+    width: 22px;
+    height: 24px;
 }
 
 .submit-button a{
