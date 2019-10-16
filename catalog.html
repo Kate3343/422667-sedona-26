@@ -8,22 +8,22 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="site-header">
-          <div class="container">
-            <nav class="navigation">
-              <ul class="nav-list">
-                <li><a href="">Информация</a></li>
-                <li><a href="">Фото и видео</a></li>
-                <li><a href="">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
-              </ul>
-    
-              <a class="nav-logo" href="index.html">
-                <img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона">
-              </a>
-            </nav>
-          </div>
-        </header>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a href="">Информация</a></li>
+            <li><a href="">Фото и видео</a></li>
+            <li><a href="">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+
+          <a class="nav-logo" href="index.html">
+            <img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона">
+          </a>
+        </nav>
+      </div>
+    </header>
     <main class="container">
       <section>
         <div class="background-catalog">
@@ -45,6 +45,7 @@
                 </li>
               </ul>
             </div>
+
             <div class="columns">
               <ul class="filter-checkboxes">
                 <li class="filter-checkboxes-title"><b>ТИП ЖИЛЬЯ</b></li>
@@ -64,137 +65,139 @@
             </div>
 
             <div class="columns filter-rangeline">
-                <ul class="filter-checkboxes">
-                  <li class="filter-checkboxes-title">
-                    <b>СТОИМОСТЬ В СУТКИ (Р):</b>
-                  </li>
-                  <li><p>ОТ 0 <span class="divider"></span>ДО 3000</p></li>
-                  <li class="range-button"></li>
-                  <li class="range-line"></li>
-                  <li class="range-line1"></li>
-                </ul>
-                <div >
-                  <button type="submit" class="submit-button">ПОКАЗАТЬ</button>
-                </div>
+              <ul class="filter-checkboxes">
+                <li class="filter-checkboxes-title">
+                  <b>СТОИМОСТЬ В СУТКИ (Р):</b>
+                </li>
+                <li><p>ОТ 0<span class="divider"></span>ДО 3000</p></li>
+                <li class="range-button"></li>
+                <li class="range-line"></li>
+                <li class="range-line1"></li>
+              </ul>
+              <div>
+                <button type="submit" class="submit-button">ПОКАЗАТЬ</button>
+              </div>
             </div>
           </form>
         </div>
       </section>
 
       <section class="sort">
-          <div class="sort-buttons">
-            <b>НАЙДЕНО:3</b>
-            <p>СОРТИРОВКА:</p>
-            <a class="sort-buttons-active" href="#">ПО ЦЕНЕ</a>
-            <a href="#">ПО ТИПУ</a>
-            <a href="#">ПО РЕЙТИНГУ</a>
-          </div>
-          <div class="sort-direction">
-            <a href="">
-              <img class="up disabled" src="img/icon-up-dir.png" width="11px" height="10px" alt="Ярлык стрелочки">
-              <img class="down current" src="img/icon-down-dir.png" width="11px" height="10px" alt="Ярлык стрелочки">
-            </a>
-          </div>
+        <div class="sort-buttons">
+          <b>НАЙДЕНО:3</b>
+          <p>СОРТИРОВКА:</p>
+          <a class="sort-buttons-active" href="#">ПО ЦЕНЕ</a>
+          <a href="#">ПО ТИПУ</a>
+          <a href="#">ПО РЕЙТИНГУ</a>
+        </div>
+        <div class="sort-direction">
+          <a href="#" class="sort-toggle up"></a>
+          <a href="#" class="sort-toggle down"></a>
+        </div>
       </section>
 
-    <div class="hotel">
-      <div class="hotel-pic">
-        <a>
-          <img src="img/hotel-picture.png" width="135px" height="90px" alt="Фото гостиницы">
-        </a>
-      </div>
-      <div class="hotel-block with-buttons">
-        <div class="hotel-name">
-          <a href="#">AMARA RESORT&SPA</a>
+      <div class="hotel">
+        <div class="hotel-pic">
+          <a>
+            <img src="img/hotel-picture.png" width="135px" height="90px" alt="Фото гостиницы">
+          </a>
         </div>
-        <div class="hotel-info">
-          <div class="hotel-type">ГОСТИНИЦА</div>
-          <div class="hotel-price">ОТ 4000 Р.</div>
-        </div>
-        <div>
-          <div class="btn btn-blue">
-            <a href="#">ПОДРОБНЕЕ</a>
+
+        <div class="hotel-block with-buttons">
+          <div class="hotel-name">
+            <a href="#">AMARA RESORT&SPA</a>
           </div>
-          <div class="btn btn-brown">
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+          <div class="hotel-info">
+            <div class="hotel-type">ГОСТИНИЦА</div>
+            <div class="hotel-price">ОТ 4000 Р.</div>
           </div>
-        </div>
-      </div>
-      <div class="hotel-block rating">
-        <a>
-          <img src="img/star.png" width="18px" height="17px" alt="5 из 5 звёзд">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-        </a>
-        <p>РЕЙТИНГ: 8,5</p>
-      </div>
-    </div>
-    <div class="hotel">
-      <div class="hotel-pic">
-        <a>
-          <img src="img/hotel-picture_3.png" width="135px" height="90px" alt="Фото мотеля">
-        </a>
-      </div>
-      <div class="hotel-block with-buttons">
-        <div class="hotel-name">
-          <a href="#">DESERT QUALIL INN</a>
-        </div>
-        <div class="hotel-info">
-          <div class="hotel-type">МОТЕЛЬ</div>
-          <div class="hotel-price">ОТ 3000 Р.</div>
-        </div>
-        <div>
-          <div class="btn btn-blue">
-            <a href="#">ПОДРОБНЕЕ</a>
-          </div>
-          <div class="btn btn-brown">
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+          <div>
+            <div class="btn btn-blue">
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="btn btn-brown">
+              <a href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hotel-block rating">
-        <a>
-          <img src="img/star.png" width="18px" height="17px" alt="3 из 5 звёзд">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-        </a>
-        <p>РЕЙТИНГ: 8,9</p>
-      </div>
-    </div>
-    </div>
-    <div class="hotel">
-      <div class="hotel-pic">
-        <a>
-          <img src="img/hotel-picture_2.png" width="135px" height="90px" alt="Фото апартаментов">
-        </a>
-      </div>
-      <div class="hotel-block with-buttons">
-        <div class="hotel-name">
-          <a href="#">VILLAS AT POCO DIABLO</a>
-        </div>
-        <div class="hotel-info">
-          <div class="hotel-type">АПАРТАМЕНТЫ</div>
-          <div class="hotel-price">ОТ 2000 Р.</div>
-        </div>
-        <div>
-          <div class="btn btn-blue">
-            <a href="#">ПОДРОБНЕЕ</a>
+
+        <div class="hotel-block rating">
+          <div class="rating-stars">
+            <div class="rating-star"></div>
+            <div class="rating-star"></div>
+            <div class="rating-star"></div>
+            <div class="rating-star"></div>
           </div>
-          <div class="btn btn-brown">
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
-          </div>
+          <p>РЕЙТИНГ: 8,5</p>
         </div>
       </div>
-      <div class="hotel-block rating">
-        <a>
-          <img src="img/star.png" width="18px" height="17px" alt="2 из 5 звёзд">
-          <img src="img/star.png" width="18px" height="17px" alt="">
-        </a>
-        <p>РЕЙТИНГ: 9,2</p>
+
+      <div class="hotel">
+        <div class="hotel-pic">
+          <a>
+            <img src="img/hotel-picture_3.png" width="135px" height="90px" alt="Фото мотеля">
+          </a>
+        </div>
+        <div class="hotel-block with-buttons">
+          <div class="hotel-name">
+            <a href="#">DESERT QUALIL INN</a>
+          </div>
+          <div class="hotel-info">
+            <div class="hotel-type">МОТЕЛЬ</div>
+            <div class="hotel-price">ОТ 3000 Р.</div>
+          </div>
+          <div>
+            <div class="btn btn-blue">
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="btn btn-brown">
+              <a href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hotel-block rating">
+          <div class="rating-stars">
+            <div class="rating-star"></div>
+            <div class="rating-star"></div>
+            <div class="rating-star"></div>
+          </div>
+          <p>РЕЙТИНГ: 8,9</p>
+        </div>
       </div>
-    </div>
+
+      <div class="hotel">
+        <div class="hotel-pic">
+          <a>
+            <img src="img/hotel-picture_2.png" width="135px" height="90px" alt="Фото апартаментов">
+          </a>
+        </div>
+        <div class="hotel-block with-buttons">
+          <div class="hotel-name">
+            <a href="#">VILLAS AT POCO DIABLO</a>
+          </div>
+          <div class="hotel-info">
+            <div class="hotel-type">АПАРТАМЕНТЫ</div>
+            <div class="hotel-price">ОТ 2000 Р.</div>
+          </div>
+          <div>
+            <div class="btn btn-blue">
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="btn btn-brown">
+              <a href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hotel-block rating">
+          <div class="rating-stars">
+            <div class="rating-star"></div>
+            <div class="rating-star"></div>
+          </div>
+          <p>РЕЙТИНГ: 9,2</p>
+        </div>
+      </div>
     </main>
 
     <footer class="inner-footer">
