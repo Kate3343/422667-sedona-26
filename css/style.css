@@ -53,13 +53,13 @@ h2 {
     background: 50% 0px url(../img/background-photo.jpg) no-repeat;
     background-attachment: fixed;
     position: relative;
-    height: 773px;
+    height: 700px;
     width: 100%;
 }
 .main-bg .welcome-image {
     width: 460px;
     position: absolute;
-    top: 132px;
+    top: 61px;
     left: 50%;
     margin-left: -230px;
     z-index: 10;
@@ -68,7 +68,7 @@ h2 {
 .main-bg .background-image-white {
     width: 1200px;
     position: absolute;
-    top: 506px;
+    top: 435px;
     left: 50%;
     margin-left: -600px;
     z-index: 10;
@@ -143,7 +143,7 @@ h2 {
     padding: 61px 356px;
     font-size: 21px;
     position: absolute;
-    top: 563px;
+    top: 492px;
     margin-right: 600px;
     z-index: 10;
 }
