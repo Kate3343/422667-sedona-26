@@ -49,17 +49,23 @@ h2 {
     color: #000000;
 }
 
+header {
+    position: relative;
+}
+
 .main-bg {
-    background: 50% 0px url(../img/background-photo.jpg) no-repeat;
+    background-color: #5496bd;
+    background: 50% -26px url(../img/background-photo.jpg) no-repeat;
     background-attachment: fixed;
     position: relative;
-    height: 700px;
+    height: 505px;
     width: 100%;
 }
+
 .main-bg .welcome-image {
     width: 460px;
     position: absolute;
-    top: 61px;
+    top: 75px;
     left: 50%;
     margin-left: -230px;
     z-index: 10;
@@ -68,18 +74,18 @@ h2 {
 .main-bg .background-image-white {
     width: 1200px;
     position: absolute;
-    top: 435px;
+    top: 448px;
     left: 50%;
     margin-left: -600px;
     z-index: 10;
 }
 
 .background-catalog {
+    background-color: #5496bd;
     background: 50% -250px url(../img/filter-background.jpg) no-repeat;
 }
 
 .navigation {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -91,9 +97,9 @@ h2 {
     width: 140px;
     height: 71px;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 50%;
-    margin-left: -70px;
+    margin-left: -71px;
     z-index: 999;
 }
 
@@ -106,18 +112,33 @@ h2 {
     background-color: #ffffff;
 }
 
-.nav-list a{
+.nav-list a {
     font-weight: bold;
     color: #000000;
 }
 
 .nav-list li {
-    width: calc(100% / 5);
-    padding: 22px 68px 22px 73px;
+    width: 239px;
+    padding: 17px 62px 10px 68px;
+}
+
+.text-right {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.text-left {
+    text-align: left;
+    margin-left: 3px;
 }
 
 .nav-list li:nth-child(2) {
-    margin-right: auto;
+    margin-right: 244px;
+    padding: 17px 55px 18px 75px;
+}
+
+.nav-list li:nth-child(3) {
+    padding: 17px 63px 18px 75px;
 }
 
 .nav-list a:hover,
@@ -140,28 +161,27 @@ h2 {
     justify-content: center;
     align-items: center;
     background: #ffffff;
-    padding: 61px 356px;
+    padding-bottom: 39px;
+    padding-top: 42px;
     font-size: 21px;
-    position: absolute;
-    top: 492px;
-    margin-right: 600px;
     z-index: 10;
 }
 
 .definition-p {
-    width: 440px;
+    width: 442px;
     color: #000000;
     font-weight: bold;
     line-height: 1.24;
-    margin: 0;
-    padding-bottom: 27px;
 }
 
 .definition-p1 {
+    width: 100%;
     font-size: 14px;
     font-weight: normal;
+    letter-spacing: 0.1px;
     color: #333333;
-    margin: 0;
+    line-height: 1.86;
+    margin-top: 7px;
 }
 
  /* карточки преимуществ на главной странице */
@@ -169,10 +189,14 @@ h2 {
 .advantages h2 {
     font-size: 21px;
     font-weight: bold;
+    padding-bottom: 6px;
 }
 
 .advantages p {
     font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 6px;
+    padding-right: 7px;
 }
 
 .advantages-row {
@@ -193,59 +217,78 @@ h2 {
 .bg-blue {
     background: #81b3d2;
     color: #ffffff;
-    padding: 36px 60px 54px 60px;
+    padding: 27px 47px 39px 55px;
+}
+
+.advantages-card.bg-blue1 {
+    padding: 30px 40px 39px 46px;
 }
 
 .bg-blue h2 {
     color: #ffffff;
+    padding-left: 66px;
+    padding-right: 74px;
+    padding-bottom: 10px;
 }
 
-.advantages-card.bg-blue1 {
-    padding: 39px 49px 51px 48px;
+.bg-blue1 h2 {
+    padding-right: 72px;
 }
 
 .advantages-row .with-icon {
     background-color: #ffffff;
-    padding: 62px 57px 87px 58px;
+    padding: 57px 47px 58px 49px;
 }
 
 .icon {
+    width: 75px;
+    height: 75px;
     display: inline-block;
-    width: calc(100%/3);
-    margin-bottom: 30px;
+    vertical-align: middle;
+    margin-bottom: 26px;
 }
 
-.icon-house {
-    background: url(../img/icon-1.svg) no-repeat;
-    width: 75px;
-    height: 72px;
+
+.icon-present {
+    width: 64px;
+    height: 76px;
+    margin-bottom: 25px;
 }
 
 .icon-burger {
-    background: url(../img/icon-3.svg) no-repeat;
     width: 74px;
     height: 70px;
-}
-
-.icon-present {
-    background: url(../img/icon-2.svg) no-repeat;
-    width: 64px;
-    height: 76px;
+    margin-bottom: 31px;
 }
 
 .advantages-row .with-icon h2 {
-    margin-bottom: 29px;
+    margin-bottom: 19px;
     margin-top: 0;
 }
 
 .advantages-row .with-icon p {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 17px;
+    padding-left: 5px;
 }
 
 .advantages-row .grey {
     background: #eeeeee;
-    padding: 50px 67px 64px 67px;
+    padding: 32px 67px 31px 67px;
+}
+
+.grey.card-3 {
+    padding: 32px 74px 31px 75px;
+}
+
+.grey h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.grey p {
+    padding-right: 2px;
+    margin-top: 2px;
 }
 
  /* блок поиска гостиницы */
@@ -263,11 +306,13 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
-    margin-top: 57px;
+    margin-top: 59px;
+    margin-bottom: 11px;
 }
 
 .search-block p {
     line-height: 1.71;
+    padding-right: 1px;
 }
 
 .brown-button {
@@ -278,7 +323,7 @@ h2 {
     line-height: 1.24;
     color: #ffffff;
     padding: 30px 139px 30px 140px;
-    margin-top: 35px;
+    margin-top: 34px;
 }
 
 .brown-button:hover,
@@ -291,12 +336,8 @@ h2 {
     color: rgba(255, 255, 255, 0.3);
 }
 
-footer {
-    position: absolute;
-    width: 1200px;
-    bottom: 0;
-    left: 50%;
-    margin-left: -600px;
+.footer-flex {
+    margin-top: -127px;
     opacity: 0.9;
     background-color: #ffffff;
     display: flex;
@@ -306,58 +347,55 @@ footer {
 }
 
 .inner-footer {
-    position: relative;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    margin-top: 127px;
 }
 
-.footer-column{
+.footer-column {
     width: calc(100%/3);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 148px;
 }
 
 .footer-social {
     display: flex;
     align-items: flex-start;
     list-style: none;
-    padding: 36px 0;
+    padding: 26px 0;
     justify-content: center;
 }
 
 .social-buttons a {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 6px;
     align-items: center;
     width: 46px;
     height: 48px;
     background: #81b3d2;
+    margin-right: 4px;
+    margin-left: 2px;
+    margin-top: -3px;
 }
 
 .social-buttons .tw {
-    background-image: url(../img/tw-icon.png);
     width: 17px;
     height: 15px;
-    margin-top: 17px;
-    margin-left: 15px;
+    padding-top: 17px;
+    padding-left: 15px;
 }
 
 .social-buttons .fb {
-    background-image: url(../img/fb-icon.png);
     width: 12px;
     height: 22px;
-    margin-top: 13px;
-    margin-left: 17px;
+    padding-top: 13px;
+    padding-left: 17px;
 }
 
 .social-buttons .youtube {
-    background-image: url(../img/youtube.png);
     width: 20px;
     height: 16px;
-    margin-top: 16px;
-    margin-left: 13px;
+    padding-top: 16px;
+    padding-left: 13px;
 }
 
 .footer-social a:hover,
@@ -369,16 +407,8 @@ footer {
     background-color: #5496bd;
 }
 
-.social-buttons .tw:active {
-    background-image: url(../img/tw.png);
-}
-
-.social-buttons .fb:active {
-    background-image: url(../img/fb-active.png);
-}
-
-.social-buttons .youtube:active {
-    background-image: url(../img/youtube-active.png);
+.footer-social a:active path {
+    opacity: 0.3;
 }
 
 .footer-hashtag {
@@ -448,10 +478,14 @@ footer {
     color: #000000;
     background-color: #f2f2f2;
     border: none;
-    margin-left: 20px;
-    margin-bottom: 29px;
-    padding-left: 13px;
+    margin-left: 15px;
+    margin-bottom: 32px;
+    padding-left: 14px;
     position: relative;
+}
+
+::-ms-clear {
+    display: none;
 }
 
 .field-wrapper .text-field:focus {
@@ -465,21 +499,23 @@ footer {
 }
 
 .modal-row label[for="date_of_arrival"] {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    padding-right: 6px;
 }
 
 .modal-row label[for="date_of_return"] {
     margin-bottom: 35px;
+    padding-right: 2px;
 }
 
 .modal-row label[for="adults"] {
-    margin-top: 7px;
-    margin-right: 41px;
+    margin-top: 5px;
+    margin-right: 43px;
 }
 
 .modal-row label[for="kids"] {
-    margin-top: 7px;
-    margin-right: 27px;
+    margin-top: 5px;
+    margin-right: 28px;
 }
 
 .field-cal1 {
@@ -488,7 +524,7 @@ footer {
     position: absolute;
     width: 21px;
     height: 22px;
-    right: 72px;
+    right: 70px;
     top: 60px;
 }
 
@@ -498,7 +534,7 @@ footer {
     position: absolute;
     width: 21px;
     height: 22px;
-    right: 72px;
+    right: 70px;
     top: 127px;
 }
 
@@ -528,22 +564,25 @@ footer {
     margin-left: 26px;
 }
 
-.minus-plus-buttons{
+.minus-plus-buttons {
     display: flex;
+    padding-bottom: 0;
 }
 
 .modal-row-adults input[type="text"] {
     width: 38px;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding-bottom: 8px;
+    padding-right: 16px;
 }
 
 .modal-row-kids input[type="text"] {
     width: 38px;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding-bottom: 8px;
+    padding-right: 15px;
 }
 
 .count-btn {
@@ -562,8 +601,8 @@ footer {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 48%;
     width: 12px;
     height: 3px;
     background-color: #a9a9a9;
@@ -574,8 +613,8 @@ footer {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 47%;
     width: 3px;
     height: 12px;
     background-color: #a9a9a9;
@@ -598,7 +637,7 @@ footer {
     font-size: 21px;
     font-weight: bold;
     color: #ffffff;
-    padding: 15px 196px 20px 196px;
+    padding: 12px 196px 17px 196px;
 }
 
 .blue-button:hover,
@@ -616,28 +655,26 @@ footer {
 form.filter-form {
     color: #ffffff;
     display: flex; 
-    padding-top: 31px;
-    padding-left: 72px;
-    padding-right: 74px;
+    padding: 29px 89px 5px 72px;
 }
 
 .columns {
     width: auto;
     display: flex;
     flex-direction: column; 
-    margin-right: 115px;
+    margin-right: 89px;
 }
 
 .filter-checkboxes {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 30px;
+    margin-right: 29px;
     text-align: left;
 }
 
 .filter-checkboxes-title {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .filter-checkbox {
@@ -649,12 +686,12 @@ form.filter-form {
 }
 
 .filter-checkbox > label {
-    padding-left: 30px;
+    padding-left: 41px;
     position: relative;
 }
 
 .filter-checkbox > label::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -673,13 +710,13 @@ form.filter-form {
 .filter-checkbox > input[type="checkbox"]:disabled ~ label::before {
     width: 23px;
     height: 23px;
-    background: url(../img/checkbox-off-disabled.png) no-repeat;
+    background: url(../img/checkbox-off-disabled.svg) no-repeat;
 }
 
 .filter-checkbox > input[type="checkbox"]:checked:disabled ~ label::before {
     width: 27px;
     height: 23px;
-    background: url(../img/checkbox-on-disabled.png) no-repeat;
+    background: url(../img/checkbox-on-disabled.svg) no-repeat;
 }
 
 .filter-form b {
@@ -708,12 +745,13 @@ form.filter-form {
 
 .range-filter b {
     margin-bottom: 9px;
+    margin-left: 1px;
     display: flex;
     justify-content: flex-start;
 }
 
 .range-filter-vp {
-    width: 100%;
+    width: 318px;
     display: flex;
     border: 2px solid #fff;
     position: relative;
@@ -722,7 +760,7 @@ form.filter-form {
 }
 
 .range-filter-vp::before {
-    content: '';
+    content: "";
     display: block;
     width: 2px;
     background-color: #fff;
@@ -741,12 +779,12 @@ form.filter-form {
 }
 
 .range-slider {
-    width: 100%;
+    width: 318px;
     position: relative;
 }
 
 .range-slider::before {
-    content: '';
+    content: "";
     height: 2px;
     position: absolute;
     top: 50%;
@@ -758,8 +796,8 @@ form.filter-form {
 }
 
 .range-slider-active-line::before {
-    content: '';
-    width: 248px;
+    content: "";
+    width: 254px;
     height: 2px;
     position: absolute;
     top: 50%;
@@ -794,21 +832,21 @@ form.filter-form {
     right: 45px;
 }
 
-.submit-button a{
+.submit-button a {
     text-decoration: none;
     color: #ffffff;
 }
 
 .submit-button {
-    width: 133px;
-    height: 32px;
+    width: 136px;
+    height: 34px;
     border: solid 2px #ffffff;
     background: transparent;
     margin-top: 34px;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-bottom: 5px;
     color: #ffffff;
-    margin-left: 75px;
+    margin-left: 85px;
 }
 
 .submit-button:hover,
@@ -825,8 +863,8 @@ form.filter-form {
     width: 100%;
     display: flex;
     background-color: #ffffff;
-    padding-bottom: 37px;
-    padding-top: 31px;
+    padding-bottom: 25px;
+    padding-top: 33px;
     border-bottom: 1px solid #f2f2f2;
 }
 
@@ -837,8 +875,8 @@ form.filter-form {
     outline: none;
     border-bottom: 1px dotted #81b3d2;
     font-size: 12px;
-    margin-right: 33px;
-    padding-top: 4px;
+    margin-right: 21px;
+    padding-top: 6px;
 }
 
 .sort-buttons button:hover,
@@ -862,15 +900,15 @@ form.filter-form {
 .sort-buttons b {
     font-size: 21px;
     font-weight: bold;
-    padding-left: 72px;
+    padding-left: 73px;
     padding-right: 49px;
 }
 
 .sort-buttons p {
     color: var(--black);
     font-size: 12px;
-    margin: 0;
-    padding-right: 40px;
+    margin: 2px;
+    padding-right: 32px;
 }
 
 .sort-buttons .sort-buttons-active {
@@ -922,8 +960,8 @@ form.filter-form {
     display: flex;
     padding-left: 72px;
     background-color: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 33px;
+    padding-bottom: 27px;
     border-bottom: 1px solid #f2f2f2;
 }
 
@@ -942,6 +980,7 @@ form.filter-form {
     margin-right: auto;
     align-items: flex-start;
     padding-left: 30px;
+    padding-top: 0px;
 }
 
 .hotel-block {
@@ -962,7 +1001,7 @@ form.filter-form {
     color: #666666;
     background: #f2f2f2;
     margin: 0;
-    padding: 3px 9px 3px 11px;
+    padding: 2px 9px 3px 8px;
 }
 
 .rating-stars {
@@ -976,7 +1015,7 @@ form.filter-form {
     width: 18px;
     height: 17px;
     background: url(../img/star.svg) no-repeat;
-    margin-right: 6px;
+    margin-right: 5px;
     margin-bottom: 47px;
 }
 
@@ -991,6 +1030,9 @@ form.filter-form {
 .hotel-name {
     font-size: 21px;
     font-weight: bold;
+    line-height: 1.24;
+    padding-left: 2px;
+    margin-top: -6px;
 }
 
 .hotel-name a {
@@ -1009,12 +1051,12 @@ form.filter-form {
 .hotel-info {
     display: flex;
     margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 14px;
 }
 
 .hotel-type {
-    padding-right: 38px;
+    padding-right: 39px;
 }
 
 .hotel-type1 {
@@ -1031,6 +1073,10 @@ form.filter-form {
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
+}
+
+.btn-brown {
+    padding-left: 2px;
 }
 
 .btn-blue a {
